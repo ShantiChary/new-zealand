@@ -1,0 +1,493 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* reset for all */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Resets */
+ img {
+      max-width: 100%;
+      height: auto;
+ }
+
+/* Body Styles */
+body {
+    margin: 20px;
+    padding: 0px;
+    background-color: #10462f;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    background-color: black;
+}
+
+/* Header Styles */
+header {
+    height: 110px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    color:rgb(206, 194, 194);
+    border-bottom: 1px solid #10462f;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+/* Logo Image Styles */
+.header a img {
+    padding: 0 0 0 20px;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+header a {
+    position: absolute;
+    padding: 0;
+}
+
+/* Title Styles */
+.main-title,
+.sub-title {
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+}
+
+.sub-title {
+	font-size: 32px;
+	padding-top: 40px;
+}
+
+/* Nav Styles */
+.main-nav {
+    height: 60px;
+    padding: 5px 20px;
+    border-bottom: 1px solid #10462f;
+}
+
+.main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.main-nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(206, 194, 194);
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    line-height: 50px;
+    float: left;
+    border-right: 1px solid #10462f;
+}
+
+.main-nav a:last-child {
+  border-right: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.main-nav a:active {
+    background-color: #10462f;
+    color: rgb(206, 194, 194);
+}
+
+.main-nav .nav-active {
+  color: rgb(206, 194, 194);
+  background-color: #10462f;
+}
+
+/* Home Page Styles */
+.main-content {
+  background-image: url('./images/hobbiton-nz.jpg');
+  padding: 20px 0px 20px;
+  border-bottom: 1px solid #10462f;
+}
+
+.home-page-01 img {
+  width: 100%;
+  height: 720px;
+  opacity: 0.75;
+  padding: 0 20px;
+}
+
+.home-page-01 .tag-line {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 2em;
+    opacity: 0.75;
+    margin: 0;
+    line-height: 1;
+    color: rgb(206, 194, 194);
+    text-shadow:3px 3px 4px #000000;
+}
+
+.home-section {
+  padding-bottom: 30px;
+}
+
+.home-section .home-01 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.floating-articles {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.home-section .home-02,
+.home-section .home-03 {
+    width: 30%;
+    text-align: center;
+}
+
+.home-02 figure {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.home-03 figure {
+  margin: auto;
+  width: 43%;
+  padding: 20px;
+}
+
+.home-section .home-01 h2,
+.home-section .home-02 h2,
+.home-section .home-03 h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: rgb(206, 194, 194);
+  text-align: center;
+  padding-top: 10px;
+}
+
+.home-section p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: rgb(206, 194, 194);
+  line-height: 1.6;
+}
+
+.home-section .home-02 p,
+.home-section .home-03 p {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+/* Culture Page Styles */
+.culture-main {
+  padding: 20px;
+  border-bottom: 1px solid #10462f;
+}
+
+.culture-banner {
+    display: flex;
+    padding: 0 20px 0;
+    border-bottom: 1px solid #10462f;
+}
+
+.culture-banner img {
+  padding: 0 20px 40px 0;
+  border-radius: 10%;
+}
+
+.culture-banner p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color:rgb(206, 194, 194);
+    padding: 20px;
+    display: flex;
+}
+
+.culture-section {
+  display: flex;
+  padding-top: 30px;
+}
+
+.culture-section article {
+	width: 32%;
+	padding: 20px;
+}
+
+.culture-section article:nth-of-type(2){
+    margin: 0 2%;
+}
+
+.culture-section article figure {
+    margin: 0;
+    text-align: center;
+}
+
+.culture-section article figure img {
+    border-radius: 30%;
+}
+
+.culture-section article h2,
+.lang-para h2,
+.table-01 th {
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 30px 20px 10px;
+    color: rgb(206, 194, 194);
+    text-align: center;
+}
+
+.culture-section article p,
+.lang-para p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.4;
+    color: rgb(206, 194, 194);
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.lang-section {
+	padding: 20px;
+  border-top: 1px solid #10462f;
+}
+
+.table-01 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+    padding: 20px 20px 0px 60px;
+}
+
+.table-01 th, td {
+    color: rgb(206, 194, 194);
+    border: 1px solid #10462f;
+    padding: 10px 20px;
+}
+
+.table-01 td {
+  font-size: 14px;
+}
+
+/* Attractions Page Styles */
+.attractions-main {
+  border-bottom: 1px solid #10462f;
+}
+
+.attractions-main img {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.attractions-main p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: rgb(206, 194, 194);
+  padding: 80px 50px;
+}
+
+.attraction {
+  display: flex;
+  padding: 0 20px;
+}
+
+/* Interesting Facts Page Styles */
+.facts-main {
+    padding: 50px 0px 20px;
+    border: 1px solid #10462f;
+}
+
+.facts-row-01,
+.facts-row-02 {
+  display: flex;
+  padding-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.snippet-fact-01,
+.snippet-fact-02,
+.snippet-fact-03,
+.snippet-fact-04,
+.snippet-fact-05,
+.snippet-fact-06 {
+    width: 15%;
+    margin: 0 20px 10px;
+	  padding: 30px;
+	  border: 1px solid #10462f;
+}
+
+.snippet-fact-01{
+  background-color: #e6ffcc;
+  transform: rotate(-10deg);
+}
+.snippet-fact-02 {
+  background-color: #ccddff;
+  transform: rotate(-20deg);
+}
+.snippet-fact-03 {
+  background-color: #ffcccc;
+  transform: rotate(10deg);
+}
+.snippet-fact-04{
+  background-color: #ffe0b3;
+  transform: rotate(-20deg);
+}
+.snippet-fact-05 {
+  background-color: #ffffb3;
+  transform: rotate(5deg);
+}
+.snippet-fact-06 {
+  background-color: #c2c2d6;
+  transform: rotate(20deg);
+}
+
+.facts-row-01 figure,
+.facts-row-02 figure {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.facts-row-02 {
+  padding: 0 0 50px 0;
+  border-bottom: 1px solid #10462f;
+}
+
+.facts-main p {
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #000;
+    text-align: center;
+}
+
+.table-02 {
+  padding: 20px;
+}
+
+.table-02 th {
+    text-align: center;
+}
+
+.table-02 .col-02 {
+  width: 12%;
+}
+
+.table-02 th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: rgb(206, 194, 194);
+  border: none;
+  padding: 10px 20px;
+}
+
+.table-02 td {
+    color: rgb(206, 194, 194);
+    border: 1px solid #10462f;
+    padding: 10px 20px;
+}
+
+/* Getting There Page Styles */
+.gt-content {
+  background-image: url('./images/aerial.jpg');
+  padding: 20px;
+  border: 1px solid #10462f;
+}
+
+.gt-page {
+  position: relative;
+}
+
+.gt-main section article p {
+  position: absolute;
+  width: 30%;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  opacity: 0.75;
+  margin: 0;
+  line-height: 1.7;
+  color: rgb(206, 194, 194);
+}
+
+.gt-main section article figure {
+  position: absolute;
+  width: 30%;
+  top: 98%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Styles */
+footer {
+    height: 60px;
+    font-size: 14px;
+    display: flex;
+    padding-left: 20px;
+}
+
+footer p {
+   color: rgb(206, 194, 194);
+    line-height: 60px;
+    margin: 0;
+}
+
+footer .credits {
+    color: rgb(206, 194, 194);
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.footer-credits h1 {
+  color: rgb(206, 194, 194);
+  margin: 20px auto 10px 50px;
+}
+
+.footer-credits ul {
+  color:rgb(206, 194, 194);
+  margin-right: auto;
+  margin-left: 70px;
+}
+
+/* clear fix code */
+.group:after {
+	content:"";
+	display: table;
+	clear: both;
+}
